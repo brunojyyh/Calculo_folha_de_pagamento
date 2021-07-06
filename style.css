@@ -36,5 +36,16 @@ header h1 {
     width: 300px;
 }
 .botao-calcula {
-    margin: 10px 0 0 0;
+    margin: 10px 0 4px 0;
+}
+
+@media(min-width: 0px) {
+.topo {
+    width: 99%;
+}
+.caixa {
+    width: 99%;
+    height: 150px;
+    border: 2px solid blue;
+}
 }
