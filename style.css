@@ -2,7 +2,8 @@ header{
     width: 100%    ;
     height: 150px;
     margin: 0 auto;
-    background: linear-gradient(rgb(72, 72, 146),rgb(87, 87, 129));
+    background-color: rgb(56, 53, 53);
+    text-shadow: 0.2em 0.2em black;
 }
 
 
@@ -11,6 +12,8 @@ header h1 {
     text-align: center;
     font-weight: bold;
     font-size: 25px;
+    color: #fdfdfd;
+    text-shadow: 50px;
 }
 .caixa {
     display: flex;
@@ -39,6 +42,40 @@ header h1 {
     margin: 10px 0 4px 0;
 }
 
+#resultado {
+    font-size: 20px;
+}
+
+.rodape  {
+    width: 100%;
+    height: 12rem;
+    border: 1px solid black;
+    margin: auto;
+    background-color: rgb(56, 53, 53);
+}
+.rodape-conteudo {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.direitos {
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+.lista-social {
+    display: flex;
+    width: 10%;
+    margin-top: 10px;
+    
+}
+.social {
+    margin-left: 10px;
+}
+
 @media(min-width: 0px) {
 .topo {
     width: 99%;
@@ -46,6 +83,7 @@ header h1 {
 .caixa {
     width: 99%;
     height: 150px;
-    border: 2px solid blue;
+    border: 2px solid rgb(56, 53, 53);
+    margin-bottom: 500px;
 }
 }
