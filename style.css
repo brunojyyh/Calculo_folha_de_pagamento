@@ -47,7 +47,7 @@ header h1 {
 }
 
 .rodape  {
-    width: 100%;
+    width: 100vw;
     height: 12rem;
     border: 1px solid black;
     margin: auto;
