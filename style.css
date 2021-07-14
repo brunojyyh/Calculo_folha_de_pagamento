@@ -1,3 +1,15 @@
+html {
+    /* colocando esse heigth aqui  todos os elementos se encaixam na tela e o footer fica no final da pagina */
+    height: 100vh;
+    min-height: 100%;
+    
+}
+body {
+    /* usando essas propriedades dentro do body, estou dizendo que o body tem que ocupar no minimo 100% da altura, fazendo com que o footer sempre fique fixo no final da pagina */
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
 header{
     width: 100%    ;
     height: 150px;
@@ -36,7 +48,7 @@ header h1 {
     
 }
 #salario {
-    width: 300px;
+    width: 20em;
 }
 .botao-calcula {
     margin: 10px 0 4px 0;
@@ -50,7 +62,7 @@ header h1 {
     width: 100vw;
     height: 12rem;
     border: 1px solid black;
-    margin: auto;
+    margin-top: auto;
     background-color: rgb(56, 53, 53);
 }
 .rodape-conteudo {
@@ -68,8 +80,9 @@ header h1 {
 }
 .lista-social {
     display: flex;
-    width: 10%;
     margin-top: 10px;
+    margin-right: 10px;
+
     
 }
 .social {
@@ -84,6 +97,6 @@ header h1 {
     width: 99%;
     height: 150px;
     border: 2px solid rgb(56, 53, 53);
-    margin-bottom: 500px;
+   
 }
 }
