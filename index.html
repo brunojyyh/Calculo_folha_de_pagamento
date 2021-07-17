@@ -12,12 +12,13 @@
 </head>
 <body>
     <header class="topo">
-        <h1 class="topo__titulo">Calculo irrf sobre a folha</h1>
+        <h1 class="topo__titulo">Calculo IRRF sobre folha de Pagamento</h1>
     </header>
     <main>
         <section class="caixa">
-            <label for="salario">informe o valor do salario:</label>
-            <input type="text" name="txtsalario" id="salario">
+            <h2>Preencha as informações abaixo para prosseguir:</h2>
+            <label for="salario">Salario</label>
+            <input type="number" name="txtsalario" id="salario" placeholder="Informe o valor do salario">
             <input class="caixa__botao" type="button" value="calcular" onclick="calcular()">
             <div id="resultado">
             
@@ -39,7 +40,7 @@
             </ul>
             
         </div>
-        <p class="rodape__direitos">&copy; Bruno Lopes </p>
+        <p class="rodape__direitos">Copyright &copy;  2021  Bruno Lopes </p>
     </footer>
     <script src="assets/calculo.js"></script>
 
