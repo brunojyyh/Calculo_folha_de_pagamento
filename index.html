@@ -16,12 +16,21 @@
     </header>
     <main>
         <section class="caixa">
-            <h2>Preencha as informações abaixo para prosseguir:</h2>
-            <label for="salario">Salario</label>
+            <h2 class="caixa__titulo">Preencha as informações abaixo para prosseguir:</h2>
+            <label class="caixa__label" for="salario">Salario:</label>
             <input type="number" name="txtsalario" id="salario" placeholder="Informe o valor do salario">
+            <div class="caixa__depedentes">
+                <p class= "caixa__paragrafo">Possui dependentes:</p>
+                <label class="dependentes__pergunta" for="sim"><input class="" type="radio" name="sim" id="sim">Sim</label>
+                <label class="dependentes__pergunta" for="nao"><input class="" type="radio" name="sim" id="nao">Não</label>
+            </div>
             <input class="caixa__botao" type="button" value="calcular" onclick="calcular()">
-            <div id="resultado">
             
+            <div id="resultado">
+
+            </div>
+            <div id="teste" >
+
             </div>
 
         </section>

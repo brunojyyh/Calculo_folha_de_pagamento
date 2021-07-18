@@ -38,12 +38,14 @@ body {
     justify-content: center;
     
 }
-.caixa label {
-    line-height: 1.5;
+.caixa__titulo {
+    width: 328px;
+    padding-bottom: 20px;
+}
+.caixa__label {
+    line-height: 1.8;
     font-weight: bold;
-    display: block;
-    
-
+    width: 328px; 
 
     
 }
@@ -55,8 +57,27 @@ body {
     -webkit-appearance: none;
     margin: 0;
 }
+
+.caixa__paragrafo {
+    width: 328px;
+    text-align: left;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.caixa__dependentes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.dependentes__pergunta {
+    line-height: 1.8;
+}
 .caixa__botao {
     margin: 10px 0 4px 0;
+
+}
+.caixa__botao:hover {
+    cursor: pointer;
 }
 
 #resultado {

@@ -9,6 +9,7 @@ function calcular(){
     let inss = 0;
     let aliquota = 0;
     var resultado = document.getElementById("resultado");
+    var teste = document.getElementById("teste")
     if(salario.value.length > 0) {
         if (salarioValor <= 1100) {
             aliquota = 0.075 * 100;
@@ -34,7 +35,7 @@ function calcular(){
             faixa4 = (salarioValor - 3305.22) * 0.14; 
             aliquota = ((faixa1 + faixa2 + faixa3 + faixa4) / salarioValor) * 100;
             inss = (salarioValor * (aliquota / 100)).toFixed(2).replace('.', ',');
-            salarioLiquido = salarioValor - (faixa1 + faixa2 + faixa3 - faixa4);
+            salarioLiquido = salarioValor - (faixa1 + faixa2 + faixa3 + faixa4);
         } else {
             aliquota = 11.68;
             inss = ((aliquota * 6433.57) / 100).toFixed(2).replace('.', ',');
@@ -43,6 +44,11 @@ function calcular(){
          
     }else {
         window.alert('salario nao informado')
+    }
+    if(document.getElementById('sim').checked) {
+        teste.innerHTML = `opcao  marcada = SIM `
+    } else {
+        teste.innerHTML = `opcao marcada = Não`
     }
     resultado.innerHTML = `Alíquota efetiva = ${aliquota.toFixed(2).replace('.', ',')}% <br> Valor Inss ${inss} <br> Salario liquido = R$ ${salarioLiquido.toFixed(2).replace('.', ',')}`
     
