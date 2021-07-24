@@ -1,4 +1,4 @@
-function calcular(){
+const calcula = () => {
     var salario = document.getElementById("salario")
     let salarioValor = Number(salario.value);
     let salarioLiquido = 0;
@@ -8,7 +8,7 @@ function calcular(){
     let faixa4 = 0;
     let inss = 0;
     let aliquota = 0;
-    var resultado = document.getElementById("resultado");
+    var resultado = document.querySelector("[data-resultado]");
     var teste = document.getElementById("teste")
     if(salario.value.length > 0) {
         if (salarioValor <= 1100) {
@@ -50,7 +50,16 @@ function calcular(){
     } else {
         teste.innerHTML = `opcao marcada = Não`
     }
-    resultado.innerHTML = `Alíquota efetiva = ${aliquota.toFixed(2).replace('.', ',')}% <br> Valor Inss ${inss} <br> Salario liquido = R$ ${salarioLiquido.toFixed(2).replace('.', ',')}`
+    resultaInss = `Alíquota efetiva = ${aliquota.toFixed(2).replace('.', ',')}% <br> Valor Inss ${inss} <br> Salario liquido = R$ ${salarioLiquido.toFixed(2).replace('.', ',')} <hr>` 
+    resultado.innerHTML = `<p class="folha__titulo">Inss:</p>${resultaInss}`
+    resultado.classList.add('folha__inss');
+
+    // Imposto de renda
     
-    
+
 } 
+    const botao = document.querySelector('[data-botao]')
+    botao.addEventListener('click', calcula)
+    
+// function calcular(){
+    

@@ -79,13 +79,21 @@ body {
 .caixa__botao:hover {
     cursor: pointer;
 }
-
-#resultado {
+.folha__titulo {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.folha__inss{
     font-size: 20px;
     line-height: 1.5rem;
     font-weight: bold;
+    border: 1px solid black;
+    padding: 0 10px;
     
+
 }
+
 
 .rodape  {
     width: 100vw;
