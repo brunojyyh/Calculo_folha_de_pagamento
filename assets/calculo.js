@@ -76,7 +76,7 @@ const calcula = () => {
     let irrf = ((base * aliquotaIrrf) - deducao).toFixed(2);
     base = base - ((base * aliquotaIrrf) - deducao) 
     let resultadoIrrf = `Aliquota irrf = ${(aliquotaIrrf * 100).toFixed(2).replace('.',',')}% <br> Parcela a deduzir = ${deducao} <br> irrf = ${irrf} <br> Salario Liquido = R$ ${(base).toFixed(2).replace('.',',')}`
-    resultado.innerHTML = `<p class="folha__titulo">Inss:</p>${resultaInss} <hr> <p>IRRF:</p>${resultadoIrrf}`
+    resultado.innerHTML = `<p class="folha__titulo">Inss:</p>${resultaInss} <hr> <p class="folha__titulo">IRRF:</p>${resultadoIrrf}`
     
    
 } 
